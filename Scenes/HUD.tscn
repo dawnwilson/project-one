@@ -1,8 +1,10 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://Assets/3Dventure_32.tres" type="DynamicFont" id=1]
+[ext_resource path="res://Scripts/HUD.gd" type="Script" id=2]
 
 [node name="HUD" type="CanvasLayer"]
+script = ExtResource( 2 )
 
 [node name="HBoxContainer" type="HBoxContainer" parent="."]
 anchor_left = 0.5
@@ -15,7 +17,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Label" type="Label" parent="HBoxContainer"]
+[node name="P1HealthLabel" type="Label" parent="HBoxContainer"]
 margin_top = 5.0
 margin_right = 212.0
 margin_bottom = 35.0
@@ -26,7 +28,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Label2" type="Label" parent="HBoxContainer"]
+[node name="P2HealthLabel" type="Label" parent="HBoxContainer"]
 margin_left = 312.0
 margin_top = 5.0
 margin_right = 524.0
